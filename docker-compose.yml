@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  reseedar:
+    environment:
+      - NODE_ENV="development"
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 8081:8081
+      - 9229:9229
+    command: npm start
