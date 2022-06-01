@@ -6,22 +6,24 @@ import sequelize from "../db";
 
 // internal modules
 
-const App = sequelize.define("App", {
+const Radarr = sequelize.define("Radarr", {
   id: {
     type: DataTypes.UUID,
     defaultValue: Sequelize.UUIDV4,
     primaryKey: true,
     allowNull: false,
   },
-  type: {
-    type: Sequelize.ENUM("radarr", "sonarr", "prowlarr", "flood"),
-  },
   address: {
     type: DataTypes.STRING,
+    allowNull: false,
+    validate: {
+      isUrl: true,
+      notEmpty: true,
+    },
   },
   apiKey: {
     type: DataTypes.STRING,
   },
 });
 
-export default App;
+export default Radarr;
