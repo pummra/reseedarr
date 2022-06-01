@@ -6,7 +6,7 @@ import express from "express";
 // internal modules
 import sequelize from "./db";
 
-var app = express();
+const app = express();
 
 async function checkDatabaseConnection() {
   try {
@@ -19,8 +19,7 @@ async function checkDatabaseConnection() {
   }
 }
 
-//Launch listening server on port 3434
-app.listen(3434, async function () {
+app.listen(3434, async () => {
   console.log(`Environment: ${process.env.NODE_ENV}`);
   await checkDatabaseConnection();
   console.log("app listening on port 3434!");
