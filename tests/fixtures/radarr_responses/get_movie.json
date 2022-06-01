@@ -1,0 +1,998 @@
+[
+    {
+        "title": "(500) Days of Summer",
+        "originalTitle": "(500) Days of Summer",
+        "originalLanguage": {
+            "id": 1,
+            "name": "English"
+        },
+        "alternateTitles": [
+            {
+                "sourceType": "tmdb",
+                "movieId": 1,
+                "title": "500 días con ella",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4321
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 1,
+                "title": "500 Dias Com Ela",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4322
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 1,
+                "title": "500 Dias com Summer",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 18,
+                    "name": "Portuguese"
+                },
+                "id": 4323
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 1,
+                "title": "500 dni miłości",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 12,
+                    "name": "Polish"
+                },
+                "id": 4324
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 1,
+                "title": "(500) jours ensemble",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 2,
+                    "name": "French"
+                },
+                "id": 18595
+            }
+        ],
+        "secondaryYearSourceId": 0,
+        "sortTitle": "500 days summer",
+        "sizeOnDisk": 9387578029,
+        "status": "released",
+        "overview": "Tom, greeting-card writer and hopeless romantic, is caught completely off-guard when his girlfriend, Summer, suddenly dumps him. He reflects on their 500 days together to try to figure out where their love affair went sour, and in doing so, Tom rediscovers his true passions in life.",
+        "inCinemas": "2009-07-17T00:00:00Z",
+        "physicalRelease": "2010-02-03T00:00:00Z",
+        "digitalRelease": "2011-10-05T00:00:00Z",
+        "images": [
+            {
+                "coverType": "poster",
+                "url": "/MediaCover/1/poster.jpg?lastWrite=637834951325879798",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/f9mbM0YMLpYemcWx6o2WeiYQLDP.jpg"
+            },
+            {
+                "coverType": "fanart",
+                "url": "/MediaCover/1/fanart.jpg?lastWrite=637834951327269795",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/etBZfuOie3uODTKTV5xnbAKB4Fr.jpg"
+            }
+        ],
+        "website": "https://www.foxmovies.com/movies/500-days-of-summer",
+        "year": 2009,
+        "hasFile": true,
+        "youTubeTrailerId": "PsD0NpFSADM",
+        "studio": "Fox Searchlight Pictures",
+        "path": "/data/media/movies/1080p/500 Days of Summer (2009)",
+        "qualityProfileId": 4,
+        "monitored": true,
+        "minimumAvailability": "tba",
+        "isAvailable": true,
+        "folderName": "/data/media/movies/1080p/500 Days of Summer (2009)",
+        "runtime": 95,
+        "cleanTitle": "500dayssummer",
+        "imdbId": "tt1022603",
+        "tmdbId": 19913,
+        "titleSlug": "19913",
+        "certification": "12A",
+        "genres": [
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "tags": [],
+        "added": "2017-03-06T22:29:09Z",
+        "ratings": {
+            "imdb": {
+                "votes": 502738,
+                "value": 7.7,
+                "type": "user"
+            },
+            "tmdb": {
+                "votes": 8367,
+                "value": 7.3,
+                "type": "user"
+            },
+            "metacritic": {
+                "votes": 0,
+                "value": 76,
+                "type": "user"
+            },
+            "rottenTomatoes": {
+                "votes": 0,
+                "value": 86,
+                "type": "user"
+            }
+        },
+        "movieFile": {
+            "movieId": 1,
+            "relativePath": "500 Days of Summer (2009) [imdb-tt1022603][1080p Blu-ray Proper][DTS 5.1][x264]-SADPANDA.mkv",
+            "path": "/data/media/movies/1080p/500 Days of Summer (2009)/500 Days of Summer (2009) [imdb-tt1022603][1080p Blu-ray Proper][DTS 5.1][x264]-SADPANDA.mkv",
+            "size": 9387578029,
+            "dateAdded": "2022-03-28T20:06:39Z",
+            "sceneName": "500.Days.of.Summer.2009.PROPER.1080p.BluRay.x264-SADPANDA",
+            "indexerFlags": 0,
+            "quality": {
+                "quality": {
+                    "id": 7,
+                    "name": "Bluray-1080p",
+                    "source": "bluray",
+                    "resolution": 1080,
+                    "modifier": "none"
+                },
+                "revision": {
+                    "version": 2,
+                    "real": 0,
+                    "isRepack": false
+                }
+            },
+            "mediaInfo": {
+                "audioBitrate": 1536000,
+                "audioChannels": 5.1,
+                "audioCodec": "DTS",
+                "audioLanguages": "eng",
+                "audioStreamCount": 1,
+                "videoBitDepth": 8,
+                "videoBitrate": 0,
+                "videoCodec": "x264",
+                "videoDynamicRangeType": "",
+                "videoFps": 23.976,
+                "resolution": "1920x800",
+                "runTime": "1:35:04",
+                "scanType": "Progressive",
+                "subtitles": "eng/eng"
+            },
+            "originalFilePath": "500.Days.of.Summer.2009.PROPER.1080p.BluRay.x264-SADPANDA/500.Days.of.Summer.2009.PROPER.1080p.BluRay.x264-SADPANDA.mkv",
+            "qualityCutoffNotMet": false,
+            "languages": [
+                {
+                    "id": 1,
+                    "name": "English"
+                }
+            ],
+            "releaseGroup": "SADPANDA",
+            "edition": "",
+            "id": 10300
+        },
+        "id": 1
+    },
+    {
+        "title": "[REC]",
+        "originalTitle": "[REC]",
+        "originalLanguage": {
+            "id": 3,
+            "name": "Spanish"
+        },
+        "alternateTitles": [
+            {
+                "sourceType": "tmdb",
+                "movieId": 2,
+                "title": "[REC] - Ein Albtraum aus Blut, Angst und Terror",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 4,
+                    "name": "German"
+                },
+                "id": 12192
+            }
+        ],
+        "secondaryYearSourceId": 0,
+        "sortTitle": "rec",
+        "sizeOnDisk": 17126361458,
+        "status": "released",
+        "overview": "A television reporter and cameraman follow emergency workers into a dark apartment building and are quickly locked inside with something terrifying.",
+        "inCinemas": "2007-11-23T00:00:00Z",
+        "physicalRelease": "2008-09-18T00:00:00Z",
+        "digitalRelease": "2008-10-23T00:00:00Z",
+        "images": [
+            {
+                "coverType": "poster",
+                "url": "/MediaCover/2/poster.jpg?lastWrite=637834987626567899",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/5XsVGgo8I12v3KlPcD0r1CNHMC6.jpg"
+            },
+            {
+                "coverType": "fanart",
+                "url": "/MediaCover/2/fanart.jpg?lastWrite=637882818630405650",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/xfrguTH6maYiGsC8FXiQ9N3lZXw.jpg"
+            }
+        ],
+        "website": "",
+        "year": 2007,
+        "hasFile": true,
+        "youTubeTrailerId": "YQUkX_XowqI",
+        "studio": "Filmax",
+        "path": "/data/media/movies/1080p/REC (2007)",
+        "qualityProfileId": 5,
+        "monitored": true,
+        "minimumAvailability": "tba",
+        "isAvailable": true,
+        "folderName": "/data/media/movies/1080p/REC (2007)",
+        "runtime": 78,
+        "cleanTitle": "rec",
+        "imdbId": "tt1038988",
+        "tmdbId": 8329,
+        "titleSlug": "8329",
+        "certification": "18",
+        "genres": [
+            "Horror",
+            "Mystery"
+        ],
+        "tags": [],
+        "added": "2017-03-06T22:29:09Z",
+        "ratings": {
+            "imdb": {
+                "votes": 176589,
+                "value": 7.4,
+                "type": "user"
+            },
+            "tmdb": {
+                "votes": 3413,
+                "value": 7.2,
+                "type": "user"
+            },
+            "metacritic": {
+                "votes": 0,
+                "value": 69,
+                "type": "user"
+            },
+            "rottenTomatoes": {
+                "votes": 0,
+                "value": 90,
+                "type": "user"
+            }
+        },
+        "movieFile": {
+            "movieId": 2,
+            "relativePath": "REC (2007) Theatrical [imdb-tt1038988][Remux-1080p Blu-ray][DTS-HD MA 5.1][x264]-BLURANiUM.mkv",
+            "path": "/data/media/movies/1080p/REC (2007)/REC (2007) Theatrical [imdb-tt1038988][Remux-1080p Blu-ray][DTS-HD MA 5.1][x264]-BLURANiUM.mkv",
+            "size": 17126361458,
+            "dateAdded": "2022-05-09T23:13:33Z",
+            "sceneName": "REC.2007.Theatrical.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-BLURANiUM",
+            "indexerFlags": 1,
+            "quality": {
+                "quality": {
+                    "id": 30,
+                    "name": "Remux-1080p",
+                    "source": "bluray",
+                    "resolution": 1080,
+                    "modifier": "remux"
+                },
+                "revision": {
+                    "version": 1,
+                    "real": 0,
+                    "isRepack": false
+                }
+            },
+            "mediaInfo": {
+                "audioBitrate": 0,
+                "audioChannels": 5.1,
+                "audioCodec": "DTS-HD MA",
+                "audioLanguages": "spa/eng/spa/eng",
+                "audioStreamCount": 4,
+                "videoBitDepth": 8,
+                "videoBitrate": 0,
+                "videoCodec": "x264",
+                "videoDynamicRangeType": "",
+                "videoFps": 23.976,
+                "resolution": "1920x1080",
+                "runTime": "1:18:29",
+                "scanType": "Progressive",
+                "subtitles": "eng/chi/fre/ger/spa/eng/eng/fre"
+            },
+            "originalFilePath": "REC.2007.Theatrical.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-BLURANiUM.mkv",
+            "qualityCutoffNotMet": false,
+            "languages": [
+                {
+                    "id": 3,
+                    "name": "Spanish"
+                },
+                {
+                    "id": 1,
+                    "name": "English"
+                }
+            ],
+            "releaseGroup": "BLURANiUM",
+            "edition": "Theatrical",
+            "id": 10721
+        },
+        "collection": {
+            "name": "[REC] Collection",
+            "tmdbId": 74508,
+            "images": []
+        },
+        "id": 2
+    },
+    {
+        "title": "[REC]²",
+        "originalTitle": "[REC]²",
+        "originalLanguage": {
+            "id": 3,
+            "name": "Spanish"
+        },
+        "alternateTitles": [
+            {
+                "sourceType": "tmdb",
+                "movieId": 3,
+                "title": "Rec 2",
+                "sourceId": 10664,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 646
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 3,
+                "title": "[REC] ²: Fear Revisited",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 12198
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 3,
+                "title": "REC 2: Possuídos",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 12200
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 3,
+                "title": "Ölüm Çığlığı 2",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 17,
+                    "name": "Turkish"
+                },
+                "id": 18806
+            }
+        ],
+        "secondaryYearSourceId": 0,
+        "sortTitle": "rec",
+        "sizeOnDisk": 20799409637,
+        "status": "released",
+        "overview": "The action continues from [REC], with the medical officer and a SWAT team outfitted with video cameras are sent into the sealed off apartment to control the situation.",
+        "inCinemas": "2009-09-15T00:00:00Z",
+        "physicalRelease": "2010-05-25T00:00:00Z",
+        "digitalRelease": "2010-05-25T00:00:00Z",
+        "images": [
+            {
+                "coverType": "poster",
+                "url": "/MediaCover/3/poster.jpg?lastWrite=637834987635837881",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/gWmIqmhb6B6bmL6EPX4sVx0jO02.jpg"
+            },
+            {
+                "coverType": "fanart",
+                "url": "/MediaCover/3/fanart.jpg?lastWrite=637834987636647880",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/nKkvSOfzm80DXIfdOIZn8Laa3oG.jpg"
+            }
+        ],
+        "website": "http://www.rec2themovie.com/",
+        "year": 2009,
+        "hasFile": true,
+        "youTubeTrailerId": "XPNY-94UfG4",
+        "studio": "Filmax",
+        "path": "/data/media/movies/1080p/REC² (2009)",
+        "qualityProfileId": 5,
+        "monitored": true,
+        "minimumAvailability": "tba",
+        "isAvailable": true,
+        "folderName": "/data/media/movies/1080p/REC² (2009)",
+        "runtime": 85,
+        "cleanTitle": "rec",
+        "imdbId": "tt1245112",
+        "tmdbId": 10664,
+        "titleSlug": "10664",
+        "certification": "18",
+        "genres": [
+            "Thriller",
+            "Horror"
+        ],
+        "tags": [],
+        "added": "2017-03-06T22:29:09Z",
+        "ratings": {
+            "imdb": {
+                "votes": 72275,
+                "value": 6.5,
+                "type": "user"
+            },
+            "tmdb": {
+                "votes": 1559,
+                "value": 6.6,
+                "type": "user"
+            },
+            "metacritic": {
+                "votes": 0,
+                "value": 52,
+                "type": "user"
+            },
+            "rottenTomatoes": {
+                "votes": 0,
+                "value": 68,
+                "type": "user"
+            }
+        },
+        "movieFile": {
+            "movieId": 3,
+            "relativePath": "REC² (2009) [imdb-tt1245112][Hybrid][Remux-1080p Blu-ray][DTS-HD MA 5.1][AVC]-Rec.mkv",
+            "path": "/data/media/movies/1080p/REC² (2009)/REC² (2009) [imdb-tt1245112][Hybrid][Remux-1080p Blu-ray][DTS-HD MA 5.1][AVC]-Rec.mkv",
+            "size": 20799409637,
+            "dateAdded": "2019-03-26T21:58:55Z",
+            "sceneName": "Rec.2.2009.BluRay.1080p.DTS-HD.MA.5.1.AVC.HYBRID.REMUX-FraMeSToR",
+            "indexerFlags": 0,
+            "quality": {
+                "quality": {
+                    "id": 30,
+                    "name": "Remux-1080p",
+                    "source": "bluray",
+                    "resolution": 1080,
+                    "modifier": "remux"
+                },
+                "revision": {
+                    "version": 1,
+                    "real": 0,
+                    "isRepack": false
+                }
+            },
+            "mediaInfo": {
+                "audioBitrate": 0,
+                "audioChannels": 5.1,
+                "audioCodec": "DTS-HD MA",
+                "audioLanguages": "spa/spa",
+                "audioStreamCount": 2,
+                "videoBitDepth": 8,
+                "videoBitrate": 0,
+                "videoCodec": "AVC",
+                "videoDynamicRangeType": "",
+                "videoFps": 25,
+                "resolution": "1920x1080",
+                "runTime": "1:20:54",
+                "scanType": "Progressive",
+                "subtitles": "eng/dan/fin/fre/ger/nor/swe"
+            },
+            "qualityCutoffNotMet": false,
+            "languages": [
+                {
+                    "id": 3,
+                    "name": "Spanish"
+                }
+            ],
+            "releaseGroup": "Rec",
+            "edition": "",
+            "id": 5286
+        },
+        "collection": {
+            "name": "[REC] Collection",
+            "tmdbId": 74508,
+            "images": []
+        },
+        "id": 3
+    },
+    {
+        "title": "10 Cloverfield Lane",
+        "originalTitle": "10 Cloverfield Lane",
+        "originalLanguage": {
+            "id": 1,
+            "name": "English"
+        },
+        "alternateTitles": [
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "The Cellar",
+                "sourceId": 333371,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 1138
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "Ten Cloverfield Lane",
+                "sourceId": 333371,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 1140
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "Valencia",
+                "sourceId": 333371,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 1141
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "Вул. Монстро, 10",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4145
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "Вулиця Кловерфілд, 10",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4146
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "Монстро 2",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4147
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 4,
+                "title": "클로버필드 10번지",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4150
+            }
+        ],
+        "secondaryYearSourceId": 0,
+        "sortTitle": "10 cloverfield lane",
+        "sizeOnDisk": 6642906934,
+        "status": "released",
+        "overview": "After getting in a car accident, a woman is held in a shelter with two men, who claim the outside world is affected by a widespread chemical attack.",
+        "inCinemas": "2016-03-10T00:00:00Z",
+        "physicalRelease": "2016-05-27T00:00:00Z",
+        "digitalRelease": "2017-10-15T00:00:00Z",
+        "images": [
+            {
+                "coverType": "poster",
+                "url": "/MediaCover/4/poster.jpg?lastWrite=637867106738477207",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/84Dhwz93vCin6T1PX6ctSvWEuNE.jpg"
+            },
+            {
+                "coverType": "fanart",
+                "url": "/MediaCover/4/fanart.jpg?lastWrite=637834948815814850",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/5uLqjVQlKNR4MbOeuheaRihPxAx.jpg"
+            }
+        ],
+        "website": "http://www.10cloverfieldlane.com/",
+        "year": 2016,
+        "hasFile": true,
+        "youTubeTrailerId": "yQy-ANhnUpE",
+        "studio": "Bad Robot",
+        "path": "/data/media/movies/1080p/10 Cloverfield Lane (2016)",
+        "qualityProfileId": 4,
+        "monitored": true,
+        "minimumAvailability": "tba",
+        "isAvailable": true,
+        "folderName": "/data/media/movies/1080p/10 Cloverfield Lane (2016)",
+        "runtime": 104,
+        "cleanTitle": "10cloverfieldlane",
+        "imdbId": "tt1179933",
+        "tmdbId": 333371,
+        "titleSlug": "333371",
+        "certification": "12A",
+        "genres": [
+            "Thriller",
+            "Science Fiction",
+            "Drama"
+        ],
+        "tags": [],
+        "added": "2017-03-06T22:29:09Z",
+        "ratings": {
+            "imdb": {
+                "votes": 316391,
+                "value": 7.2,
+                "type": "user"
+            },
+            "tmdb": {
+                "votes": 6592,
+                "value": 7,
+                "type": "user"
+            },
+            "metacritic": {
+                "votes": 0,
+                "value": 76,
+                "type": "user"
+            },
+            "rottenTomatoes": {
+                "votes": 0,
+                "value": 90,
+                "type": "user"
+            }
+        },
+        "movieFile": {
+            "movieId": 4,
+            "relativePath": "10 Cloverfield Lane (2016) [imdb-tt1179933][1080p Blu-ray][AC3 5.1][x264]-BHDStudio.mp4",
+            "path": "/data/media/movies/1080p/10 Cloverfield Lane (2016)/10 Cloverfield Lane (2016) [imdb-tt1179933][1080p Blu-ray][AC3 5.1][x264]-BHDStudio.mp4",
+            "size": 6642906934,
+            "dateAdded": "2022-03-28T16:00:03Z",
+            "sceneName": "10.Cloverfield.Lane.2016.BluRay.1080p.DD.5.1.x264-BHDStudio",
+            "indexerFlags": 0,
+            "quality": {
+                "quality": {
+                    "id": 7,
+                    "name": "Bluray-1080p",
+                    "source": "bluray",
+                    "resolution": 1080,
+                    "modifier": "none"
+                },
+                "revision": {
+                    "version": 1,
+                    "real": 0,
+                    "isRepack": false
+                }
+            },
+            "mediaInfo": {
+                "audioBitrate": 640000,
+                "audioChannels": 5.1,
+                "audioCodec": "AC3",
+                "audioLanguages": "eng",
+                "audioStreamCount": 1,
+                "videoBitDepth": 8,
+                "videoBitrate": 7908843,
+                "videoCodec": "x264",
+                "videoDynamicRangeType": "",
+                "videoFps": 23.976,
+                "resolution": "1920x800",
+                "runTime": "1:43:34",
+                "scanType": "Progressive",
+                "subtitles": ""
+            },
+            "originalFilePath": "10.Cloverfield.Lane.2016.BluRay.1080p.DD.5.1.x264-BHDStudio.mp4",
+            "qualityCutoffNotMet": false,
+            "languages": [
+                {
+                    "id": 1,
+                    "name": "English"
+                }
+            ],
+            "releaseGroup": "BHDStudio",
+            "edition": "",
+            "id": 10237
+        },
+        "id": 4
+    },
+    {
+        "title": "12 Years a Slave",
+        "originalTitle": "12 Years a Slave",
+        "originalLanguage": {
+            "id": 1,
+            "name": "English"
+        },
+        "alternateTitles": [
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "12 Anos de Escravidão",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4165
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "دوازده سال بردگی",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4166
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "노예 12년",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4167
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "12 години в робство",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 29,
+                    "name": "Bulgarian"
+                },
+                "id": 4168
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "La véritable histoire extraordinaire de Solomon Northup",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 2,
+                    "name": "French"
+                },
+                "id": 4169
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "12 años de esclavitud",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4170
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "12 let v řetězech",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 4171
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "被奪走的十二年",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 18714
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "为奴12年",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 18715
+            },
+            {
+                "sourceType": "tmdb",
+                "movieId": 5,
+                "title": "Esclave pendant douze ans",
+                "sourceId": 0,
+                "votes": 0,
+                "voteCount": 0,
+                "language": {
+                    "id": 1,
+                    "name": "English"
+                },
+                "id": 18871
+            }
+        ],
+        "secondaryYearSourceId": 0,
+        "sortTitle": "12 years slave",
+        "sizeOnDisk": 32950694040,
+        "status": "released",
+        "overview": "In the pre-Civil War United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery. Facing cruelty as well as unexpected kindnesses Solomon struggles not only to stay alive, but to retain his dignity. In the twelfth year of his unforgettable odyssey, Solomon’s chance meeting with a Canadian abolitionist will forever alter his life.",
+        "inCinemas": "2013-10-18T00:00:00Z",
+        "physicalRelease": "2014-03-20T00:00:00Z",
+        "digitalRelease": "2016-05-25T00:00:00Z",
+        "images": [
+            {
+                "coverType": "poster",
+                "url": "/MediaCover/5/poster.jpg?lastWrite=637834968187786241",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/xdANQijuNrJaw1HA61rDccME4Tm.jpg"
+            },
+            {
+                "coverType": "fanart",
+                "url": "/MediaCover/5/fanart.jpg?lastWrite=637834968189126238",
+                "remoteUrl": "https://image.tmdb.org/t/p/original/umUyVxJ4HeNebLMAcScdhF0QB3h.jpg"
+            }
+        ],
+        "website": "http://www.foxsearchlight.com/12yearsaslave",
+        "year": 2013,
+        "hasFile": true,
+        "youTubeTrailerId": "z02Ie8wKKRg",
+        "studio": "New Regency Pictures",
+        "path": "/data/media/movies/1080p/12 Years a Slave (2013)",
+        "qualityProfileId": 5,
+        "monitored": true,
+        "minimumAvailability": "tba",
+        "isAvailable": true,
+        "folderName": "/data/media/movies/1080p/12 Years a Slave (2013)",
+        "runtime": 134,
+        "cleanTitle": "12yearsslave",
+        "imdbId": "tt2024544",
+        "tmdbId": 76203,
+        "titleSlug": "76203",
+        "certification": "15",
+        "genres": [
+            "Drama",
+            "History"
+        ],
+        "tags": [],
+        "added": "2017-03-06T22:29:09Z",
+        "ratings": {
+            "imdb": {
+                "votes": 684524,
+                "value": 8.1,
+                "type": "user"
+            },
+            "tmdb": {
+                "votes": 9652,
+                "value": 7.9,
+                "type": "user"
+            },
+            "metacritic": {
+                "votes": 0,
+                "value": 96,
+                "type": "user"
+            },
+            "rottenTomatoes": {
+                "votes": 0,
+                "value": 95,
+                "type": "user"
+            }
+        },
+        "movieFile": {
+            "movieId": 5,
+            "relativePath": "12 Years a Slave (2013) [imdb-tt2024544][Remux-1080p Blu-ray][DTS-HD MA 5.1][AVC]-FraMeSToR.mkv",
+            "path": "/data/media/movies/1080p/12 Years a Slave (2013)/12 Years a Slave (2013) [imdb-tt2024544][Remux-1080p Blu-ray][DTS-HD MA 5.1][AVC]-FraMeSToR.mkv",
+            "size": 32950694040,
+            "dateAdded": "2021-02-24T05:16:13Z",
+            "sceneName": "12.Years.a.Slave.2013.BluRay.1080p.AVC.DTS-HD.MA.5.1.REMUX-FraMeSToR",
+            "indexerFlags": 0,
+            "quality": {
+                "quality": {
+                    "id": 30,
+                    "name": "Remux-1080p",
+                    "source": "bluray",
+                    "resolution": 1080,
+                    "modifier": "remux"
+                },
+                "revision": {
+                    "version": 1,
+                    "real": 0,
+                    "isRepack": false
+                }
+            },
+            "mediaInfo": {
+                "audioBitrate": 0,
+                "audioChannels": 5.1,
+                "audioCodec": "DTS-HD MA",
+                "audioLanguages": "eng",
+                "audioStreamCount": 1,
+                "videoBitDepth": 8,
+                "videoBitrate": 0,
+                "videoCodec": "AVC",
+                "videoDynamicRangeType": "",
+                "videoFps": 23.976,
+                "resolution": "1920x1080",
+                "runTime": "2:14:10",
+                "scanType": "Progressive",
+                "subtitles": "eng/spa/fre"
+            },
+            "originalFilePath": "12.Years.a.Slave.2013.BluRay.1080p.AVC.DTS-HD.MA.5.1.REMUX-FraMeSToR/2f760490e30c40189e2a2def68a3f34c.mkv",
+            "qualityCutoffNotMet": false,
+            "languages": [
+                {
+                    "id": 1,
+                    "name": "English"
+                }
+            ],
+            "releaseGroup": "FraMeSToR",
+            "edition": "",
+            "id": 6882
+        },
+        "id": 5
+    }
+]
