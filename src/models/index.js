@@ -1,16 +1,16 @@
 import File from "./file.model";
 import Movie from "./movie.model";
-import Radarr from "./radarr.model";
+import Application from "./application.model";
 import Torrent from "./torrent.model";
+
+Application.hasMany(Movie);
 
 File.belongsTo(Movie);
 File.hasMany(Torrent);
 
 Movie.hasMany(File);
-Movie.belongsTo(Radarr);
-
-Radarr.hasMany(Movie);
+Movie.belongsTo(Application);
 
 Torrent.belongsTo(File);
 
-export { File, Movie, Radarr, Torrent };
+export { Application, File, Movie, Torrent };

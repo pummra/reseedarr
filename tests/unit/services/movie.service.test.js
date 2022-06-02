@@ -5,7 +5,7 @@ import { defineFeature, loadFeature } from "jest-cucumber";
 import axios from "axios";
 
 // internal modules
-import { Movie, Radarr } from "../../../src/models";
+import { Application, Movie } from "../../../src/models";
 import MovieService from "../../../src/services/movie.service";
 import radarrGetMovieResponse from "../../fixtures/radarr_responses/get_movie.json";
 
@@ -25,8 +25,9 @@ defineFeature(feature, (test) => {
     given(
       "there is at least one Radarr instance saved to the App model",
       () => {
-        Radarr.findAll.mockResolvedValueOnce([
+        Application.findAll.mockResolvedValueOnce([
           {
+            type: "radarr",
             address: "http://127.0.0.1",
             apiKey: "123",
           },

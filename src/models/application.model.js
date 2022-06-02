@@ -6,12 +6,15 @@ import sequelize from "../db";
 
 // internal modules
 
-const Radarr = sequelize.define("Radarr", {
+const Application = sequelize.define("Application", {
   id: {
     type: DataTypes.UUID,
     defaultValue: Sequelize.UUIDV4,
     primaryKey: true,
     allowNull: false,
+  },
+  type: {
+    type: DataTypes.STRING,
   },
   address: {
     type: DataTypes.STRING,
@@ -26,4 +29,4 @@ const Radarr = sequelize.define("Radarr", {
   },
 });
 
-export default Radarr;
+export default Application;

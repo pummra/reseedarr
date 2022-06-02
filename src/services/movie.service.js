@@ -2,14 +2,14 @@
 // npm modules
 import axios from "axios";
 // internal modules
-import { Movie, Radarr } from "../models";
+import { Movie, Application } from "../models";
 
 /**
  * Syncs Movies from Radarr instances in to Reseedarrs database
  * @returns Array
  */
 const syncMovies = async () => {
-  const radarrInstances = await Radarr.findAll({
+  const radarrInstances = await Application.findAll({
     raw: true,
   });
 
