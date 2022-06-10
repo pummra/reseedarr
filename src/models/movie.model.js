@@ -20,6 +20,9 @@ const Movie = sequelize.define("Movie", {
     type: DataTypes.INTEGER,
     unique: true,
   },
+  poster: {
+    type: DataTypes.STRING,
+  },
 });
 
 export default Movie;

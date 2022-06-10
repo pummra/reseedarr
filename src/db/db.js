@@ -13,7 +13,7 @@ Sequelize.useCLS(namespace);
 let storage;
 
 if (process.env.NODE_ENV === "test") {
-  storage = "./tests/database/database.sqlite";
+  storage = `${process.cwd()}/tests/database/database.sqlite`;
 } else {
   storage = "/config/database.sqlite";
 }
@@ -23,14 +23,5 @@ const sequelize = new Sequelize({
   storage,
   logging: false,
 });
-
-(async () => {
-  if (process.env.NODE_ENV !== "production") {
-    await sequelize.sync({
-      alter: process.env.NODE_ENV === "development",
-      force: process.env.NODE_ENV === "test",
-    });
-  }
-})();
 
 export default sequelize;

@@ -6,3 +6,4 @@ tests
 .babelrc
 .eslintrc.json
 .prettier.rc
+__mocks__

@@ -5,13 +5,14 @@ import { defineFeature, loadFeature } from "jest-cucumber";
 import axios from "axios";
 
 // internal modules
-import { Application, Movie } from "../../../src/models";
+import { Application, File, Movie } from "../../../src/models";
 import MovieService from "../../../src/services/movie.service";
 import radarrGetMovieResponse from "../../fixtures/radarr_responses/get_movie.json";
 
 jest.mock("axios");
-jest.mock("../../../src/models");
-jest.spyOn(Movie, "bulkCreate");
+jest.mock("../../../src/db");
+jest.spyOn(Movie, "findOrCreate");
+jest.spyOn(File, "findOrCreate");
 
 const feature = loadFeature("./specs/features/services/movie.service.feature");
 
@@ -25,8 +26,9 @@ defineFeature(feature, (test) => {
     given(
       "there is at least one Radarr instance saved to the App model",
       () => {
-        Application.findAll.mockResolvedValueOnce([
+        Application.$queueResult([
           {
+            id: "111",
             type: "radarr",
             address: "http://127.0.0.1",
             apiKey: "123",
@@ -43,16 +45,19 @@ defineFeature(feature, (test) => {
       await MovieService.syncMovies();
     });
 
-    then("the relevant data will be extracted from the Radarr API", () => {
-      expect(Movie.bulkCreate).toBeCalledWith([
-        { title: "(500) Days of Summer", tmdbId: 19913 },
-        { title: "[REC]", tmdbId: 8329 },
-        { title: "[REC]²", tmdbId: 10664 },
-        { title: "10 Cloverfield Lane", tmdbId: 333371 },
-        { title: "12 Years a Slave", tmdbId: 76203 },
+    then("the data is saved to the model", () => {
+      expect(Movie.findOrCreate).toHaveBeenCalledTimes(5);
+      expect(Movie.findOrCreate.mock.calls).toEqual([
+        [{ where: { tmdbId: 19913 } }],
+        [{ where: { tmdbId: 8329 } }],
+        [{ where: { tmdbId: 10664 } }],
+        [{ where: { tmdbId: 333371 } }],
+        [{ where: { tmdbId: 76203 } }],
       ]);
     });
 
-    and("saved to the movie model", () => {});
+    and("a file is saved to the database for each movie", () => {
+      expect(File.findOrCreate).toHaveBeenCalledTimes(5);
+    });
   });
 });

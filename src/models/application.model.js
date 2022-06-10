@@ -16,6 +16,9 @@ const Application = sequelize.define("Application", {
   type: {
     type: DataTypes.STRING,
   },
+  name: {
+    type: DataTypes.STRING,
+  },
   address: {
     type: DataTypes.STRING,
     allowNull: false,

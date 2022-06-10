@@ -1,15 +1,17 @@
+import Application from "./application.model";
 import File from "./file.model";
 import Movie from "./movie.model";
-import Application from "./application.model";
 import Torrent from "./torrent.model";
 
-Application.hasMany(Movie);
+Application.belongsToMany(Movie, { through: File });
+Application.hasMany(File);
 
+File.belongsTo(Application);
 File.belongsTo(Movie);
 File.hasMany(Torrent);
 
+Movie.belongsToMany(Application, { through: File });
 Movie.hasMany(File);
-Movie.belongsTo(Application);
 
 Torrent.belongsTo(File);
 

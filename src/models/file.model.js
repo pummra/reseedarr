@@ -13,6 +13,9 @@ const File = sequelize.define("File", {
     primaryKey: true,
     allowNull: false,
   },
+  hasFile: {
+    type: DataTypes.BOOLEAN,
+  },
   path: {
     type: DataTypes.STRING,
   },
