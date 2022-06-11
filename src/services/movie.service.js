@@ -54,10 +54,14 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
  * Syncs Movies from Radarr instances in to Reseedarrs database
  * @returns Array
  */
-const syncMovies = async () => {
-  const radarrInstances = await Application.findAll({
-    raw: true,
-  });
+const syncMovies = async (radarrId = null) => {
+  const options = { raw: true };
+
+  if (radarrId) {
+    options.where = { id: radarrId };
+  }
+
+  const radarrInstances = await Application.findAll(options);
 
   return Promise.all(
     radarrInstances.map(async (radarrInstance) => {
