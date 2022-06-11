@@ -27,7 +27,7 @@ const Application = sequelize.define("Application", {
       notEmpty: true,
     },
   },
-  apiKey: {
+  apikey: {
     type: DataTypes.STRING,
   },
 });

@@ -43,7 +43,7 @@ defineFeature(feature, (test) => {
     );
 
     and("the Radarr instance is available", () => {
-      axios.get.mockResolvedValueOnce(radarrGetMovieResponse);
+      axios.get.mockResolvedValueOnce({ data: radarrGetMovieResponse });
     });
 
     when("the movie data is synced with Reseedar", async () => {
@@ -90,8 +90,8 @@ defineFeature(feature, (test) => {
     });
 
     and("the Radarr instances are available", () => {
-      axios.get.mockResolvedValueOnce(radarrGetMovieResponse);
-      axios.get.mockResolvedValueOnce(radarrGetMovieResponse);
+      axios.get.mockResolvedValueOnce({ data: radarrGetMovieResponse });
+      axios.get.mockResolvedValueOnce({ data: radarrGetMovieResponse });
     });
 
     when("the movie data is synced with Reseedar", async () => {
@@ -137,7 +137,7 @@ defineFeature(feature, (test) => {
     });
 
     and("the Radarr instance is available", () => {
-      axios.get.mockResolvedValueOnce(radarrGetMovieResponse);
+      axios.get.mockResolvedValueOnce({ data: radarrGetMovieResponse });
     });
 
     when("the movie data is synced with Reseedar", async () => {

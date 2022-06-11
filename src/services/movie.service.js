@@ -5,8 +5,19 @@ import axios from "axios";
 import sequelize from "../db";
 import { Application, File, Movie } from "../models";
 
+const getMoviePoster = (address, movieImages) => {
+  let poster = "";
+  const posterImage = movieImages.filter(
+    (image) => image.coverType === "poster"
+  );
+  if (posterImage[0] && posterImage[0].url) {
+    poster = `${address}${posterImage[0].url}`;
+  }
+  return poster;
+};
+
 const syncMoviesWithRadarrInstance = async (radarr) => {
-  const radarrMovies = await axios.get(`${radarr.address}/movie`, {
+  const radarrMovies = await axios.get(`${radarr.address}/api/v3/movie`, {
     params: { apikey: radarr.apikey },
   });
 
@@ -16,7 +27,7 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
   // eslint-disable-next-line no-unused-vars
   const result = await sequelize.transaction(async (t) =>
     Promise.all(
-      radarrMovies.map(async (radarrMovie) => {
+      radarrMovies.data.map(async (radarrMovie) => {
         // Create new, or update existing movie
         const [movie] = await Movie.findOrCreate({
           where: {
@@ -24,10 +35,7 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
           },
         });
         movie.title = radarrMovie.title;
-        movie.poster = radarr.address;
-        movie.poster += radarrMovie.images.filter(
-          (image) => image.coverType === "poster"
-        )[0].url;
+        movie.poster = getMoviePoster(radarr.address, radarrMovie.images);
         await movie.save();
 
         // Link this movie with this radarr instance through the file model.
@@ -41,7 +49,7 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
         await file.save();
 
         // Add the files data to the movie data
-        movie.dataValues.File = [file.dataValues];
+        // movie.dataValues.File = [file.dataValues];
         return movie;
       })
     )
@@ -72,7 +80,6 @@ const syncMovies = async (radarrId = null) => {
 
 const MovieService = {
   syncMovies,
-  syncMoviesWithRadarrInstance,
 };
 
 export default MovieService;
