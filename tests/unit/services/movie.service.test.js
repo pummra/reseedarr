@@ -16,6 +16,10 @@ jest.spyOn(File, "findOrCreate");
 
 const feature = loadFeature("./specs/features/services/movie.service.feature");
 
+afterEach(() => {
+  jest.clearAllMocks();
+});
+
 defineFeature(feature, (test) => {
   test("Movie data is collected from single Radarr instance", ({
     given,
@@ -58,6 +62,59 @@ defineFeature(feature, (test) => {
 
     and("a file is saved to the database for each movie", () => {
       expect(File.findOrCreate).toHaveBeenCalledTimes(5);
+    });
+  });
+
+  test("Movie data is collected from multiple Radarr instances", ({
+    given,
+    and,
+    when,
+    then,
+  }) => {
+    given("there is two Radarr instances saved to the App model", () => {
+      Application.$queueResult([
+        {
+          id: "111",
+          type: "radarr",
+          address: "http://127.0.0.1",
+          apiKey: "123",
+        },
+        {
+          id: "222",
+          type: "radarr",
+          address: "http://127.0.0.1",
+          apiKey: "123",
+        },
+      ]);
+    });
+
+    and("the Radarr instances are available", () => {
+      axios.get.mockResolvedValueOnce(radarrGetMovieResponse);
+      axios.get.mockResolvedValueOnce(radarrGetMovieResponse);
+    });
+
+    when("the movie data is synced with Reseedar", async () => {
+      await MovieService.syncMovies();
+    });
+
+    then("the data is saved to the model", () => {
+      expect(Movie.findOrCreate).toHaveBeenCalledTimes(10);
+      expect(Movie.findOrCreate.mock.calls).toEqual([
+        [{ where: { tmdbId: 19913 } }],
+        [{ where: { tmdbId: 8329 } }],
+        [{ where: { tmdbId: 10664 } }],
+        [{ where: { tmdbId: 333371 } }],
+        [{ where: { tmdbId: 76203 } }],
+        [{ where: { tmdbId: 19913 } }],
+        [{ where: { tmdbId: 8329 } }],
+        [{ where: { tmdbId: 10664 } }],
+        [{ where: { tmdbId: 333371 } }],
+        [{ where: { tmdbId: 76203 } }],
+      ]);
+    });
+
+    and("a file is saved to the database for each movie", () => {
+      expect(File.findOrCreate).toHaveBeenCalledTimes(10);
     });
   });
 });
