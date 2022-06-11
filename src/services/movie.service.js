@@ -5,6 +5,13 @@ import axios from "axios";
 import sequelize from "../db";
 import { Application, File, Movie } from "../models";
 
+/**
+ * Extacts movie poster from movie Images array
+ * Returns full address as string
+ * @param {string} address
+ * @param {Array} movieImages
+ * @returns {string}
+ */
 const getMoviePoster = (address, movieImages) => {
   let poster = "";
   const posterImage = movieImages.filter(
@@ -16,6 +23,11 @@ const getMoviePoster = (address, movieImages) => {
   return poster;
 };
 
+/**
+ * Syncs Movies from Radarr instance in to Reseedarrs database
+ * @param {object} radarr - Radarr instance from Application model
+ * @returns {Array}
+ */
 const syncMoviesWithRadarrInstance = async (radarr) => {
   const radarrMovies = await axios.get(`${radarr.address}/api/v3/movie`, {
     params: { apikey: radarr.apikey },
@@ -60,7 +72,9 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
 
 /**
  * Syncs Movies from Radarr instances in to Reseedarrs database
- * @returns Array
+ * Will either sync all radarr instances or one specified by radarrId param
+ * @param {string} radarrId - UUID of radarr instance in Application model
+ * @returns {Array}
  */
 const syncMovies = async (radarrId = null) => {
   const options = { raw: true };
