@@ -53,6 +53,7 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
         // Link this movie with this radarr instance through the file model.
         const [file] = await File.findOrCreate({
           where: {
+            radarrMovieId: radarrMovie.id,
             MovieId: movie.id,
             ApplicationId: radarr.id,
           },

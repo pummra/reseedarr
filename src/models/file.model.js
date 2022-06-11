@@ -13,6 +13,9 @@ const File = sequelize.define("File", {
     primaryKey: true,
     allowNull: false,
   },
+  radarrMovieId: {
+    type: DataTypes.STRING,
+  },
   hasFile: {
     type: DataTypes.BOOLEAN,
   },
