@@ -2,6 +2,7 @@ import Application from "./application.model";
 import File from "./file.model";
 import Movie from "./movie.model";
 import Torrent from "./torrent.model";
+import Task from "./task.model";
 
 Application.belongsToMany(Movie, { through: File });
 Application.hasMany(File);
@@ -15,4 +16,4 @@ Movie.hasMany(File);
 
 Torrent.belongsTo(File);
 
-export { Application, File, Movie, Torrent };
+export { Application, File, Movie, Task, Torrent };
