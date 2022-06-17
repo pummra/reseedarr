@@ -141,7 +141,7 @@ defineFeature(feature, (test) => {
     });
 
     when("the movie data is synced with Reseedar", async () => {
-      await MovieService.syncMovies(111);
+      await MovieService.syncMovies({ radarrId: 111 });
     });
 
     then("the data is saved to the model", () => {

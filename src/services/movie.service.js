@@ -3,7 +3,7 @@
 import axios from "axios";
 // internal modules
 import sequelize from "../db";
-import { Application, File, Movie } from "../models";
+import { Application, File, Movie, Task } from "../models";
 
 /**
  * Extacts movie poster from movie Images array
@@ -26,11 +26,20 @@ const getMoviePoster = (address, movieImages) => {
 /**
  * Syncs Movies from Radarr instance in to Reseedarrs database
  * @param {object} radarr - Radarr instance from Application model
+ * @param {object} task - Task instance to log details to
  * @returns {Array}
  */
-const syncMoviesWithRadarrInstance = async (radarr) => {
+const syncMoviesWithRadarrInstance = async (radarr, task) => {
+  task.logger("add", {
+    message: `Syncing Radarr Instance at address ${radarr.address}`,
+  });
+
   const radarrMovies = await axios.get(`${radarr.address}/api/v3/movie`, {
     params: { apikey: radarr.apikey },
+  });
+
+  task.logger("add", {
+    message: `Found ${radarrMovies.length} movies`,
   });
 
   // Rather than use bulkCreate() we save each movie individually.
@@ -74,21 +83,35 @@ const syncMoviesWithRadarrInstance = async (radarr) => {
 /**
  * Syncs Movies from Radarr instances in to Reseedarrs database
  * Will either sync all radarr instances or one specified by radarrId param
- * @param {string} radarrId - UUID of radarr instance in Application model
+ * @param {Object} options - Options Object
+ * @param {string} radarrId
+ * @param {Object} task
  * @returns {Array}
  */
-const syncMovies = async (radarrId = null) => {
-  const options = { raw: true };
+const syncMovies = async (options = {}) => {
+  const task = !options.task
+    ? await Task.create({ description: "Sync movies" })
+    : options.task;
 
-  if (radarrId) {
-    options.where = { id: radarrId };
+  const findOptions = { raw: true };
+
+  if (options.radarrId) {
+    findOptions.where = { id: options.radarrId };
   }
 
-  const radarrInstances = await Application.findAll(options);
+  task.logger("add", {
+    message: `Finding Radarr instances with ${JSON.stringify(findOptions)}`,
+  });
+
+  const radarrInstances = await Application.findAll(findOptions);
+
+  task.logger("add", {
+    message: `Found ${radarrInstances.length} Radarr Instances`,
+  });
 
   return Promise.all(
     radarrInstances.map(async (radarrInstance) => {
-      await syncMoviesWithRadarrInstance(radarrInstance);
+      await syncMoviesWithRadarrInstance(radarrInstance, task);
     })
   );
 };

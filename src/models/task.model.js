@@ -34,28 +34,30 @@ const Task = sequelize.define("Task", {
   },
 });
 
-if (Task.prototype) {
-  Task.prototype.addLog = async function addLog(options) {
-    let message = "";
-    if (typeof options === "string") message = options;
-    if (options.message) message = options.message;
-    this.log.push({ message });
-    await this.save();
-  };
-  Task.prototype.getLog = function getLog() {
-    return this.log.slice(-1)[0];
-  };
-  Task.prototype.logger = async function logger(operation, options = {}) {
-    if (!this.log) this.log = [];
-    let result;
-    if (operation === "add") result = await this.addLog(options);
-    if (operation === "get") result = this.getLog();
-    return result;
-  };
-  Task.prototype.complete = async function complete() {
-    this.active = false;
-    await this.save();
-  };
+if (!Task.prototype) {
+  Task.prototype = Task.Instance.prototype;
 }
+
+Task.prototype.addLog = async function addLog(options) {
+  let message = "";
+  if (typeof options === "string") message = options;
+  if (options.message) message = options.message;
+  this.log.push({ message });
+  await this.save();
+};
+Task.prototype.getLog = function getLog() {
+  return this.log.slice(-1)[0];
+};
+Task.prototype.logger = async function logger(operation, options = {}) {
+  if (!this.log || !Array.isArray(this.log)) this.log = [];
+  let result;
+  if (operation === "add") result = await this.addLog(options);
+  if (operation === "get") result = this.getLog();
+  return result;
+};
+Task.prototype.complete = async function complete() {
+  this.active = false;
+  await this.save();
+};
 
 export default Task;

@@ -1,4 +1,4 @@
-Feature: Task Modek
+Feature: Task Model
 
 Scenario: Adding a new log message
     Given there is a task instance
