@@ -7,3 +7,4 @@ tests
 .eslintrc.json
 .prettier.rc
 __mocks__
+app/src

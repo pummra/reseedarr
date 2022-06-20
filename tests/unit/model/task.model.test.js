@@ -2,10 +2,10 @@
 
 // npm modules
 import { defineFeature, loadFeature } from "jest-cucumber";
-import sequelize from "../../../src/db";
+import sequelize from "../../../api/db";
 
 // internal modules
-import { Task } from "../../../src/models";
+import { Task } from "../../../api/models";
 
 const feature = loadFeature("./specs/features/models/task.model.feature");
 

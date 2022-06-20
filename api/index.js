@@ -1,12 +1,10 @@
 // core modules
 
 // npm modules
-import express from "express";
 
 // internal modules
 import sequelize from "./db";
-
-const app = express();
+import app from "./app";
 
 async function checkDatabaseConnection() {
   try {

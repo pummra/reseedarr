@@ -5,12 +5,12 @@ import { defineFeature, loadFeature } from "jest-cucumber";
 import axios from "axios";
 
 // internal modules
-import { Application, File, Movie } from "../../../src/models";
-import MovieService from "../../../src/services/movie.service";
+import { Application, File, Movie } from "../../../api/models";
+import MovieService from "../../../api/services/movie.service";
 import radarrGetMovieResponse from "../../fixtures/radarr_responses/get_movie.json";
 
 jest.mock("axios");
-jest.mock("../../../src/db");
+jest.mock("../../../api/db");
 jest.spyOn(Movie, "findOrCreate");
 jest.spyOn(File, "findOrCreate");
 jest.spyOn(Application, "findAll");

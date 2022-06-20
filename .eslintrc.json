@@ -8,5 +8,6 @@
     "no-console": "off",
     "prettier/prettier": ["error"],
     "jsdoc/no-undefined-types": 1
-  }
+  },
+  "parserOptions": { "ecmaVersion": 2020 }
 }
